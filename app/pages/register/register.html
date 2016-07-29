@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registrese</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="register">
+  <form padding (ngSubmit)="doRegister()">
+      <ion-list no-lines>
+        <ion-item>
+          <ion-input type="text" placeholder="Digite el usuario" [(ngModel)]="newUser.username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="email" placeholder="Digite el email" [(ngModel)]="newUser.email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Digite su password" [(ngModel)]="newUser.password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Digite su password" [(ngModel)]="newUser.passwordConfirm"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button light outline block type="submit">Registrar</button>
+    </form>
+</ion-content>

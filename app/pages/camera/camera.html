@@ -1,0 +1,33 @@
+<!--
+  Generated template for the CameraPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button dark clean (click)="close()">Cancelar</button>
+    </ion-buttons>
+    <ion-title>Camera</ion-title>
+    <ion-buttons end>
+      <button clean (click)="goToFiltersPage()">Filtros</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="camera">
+  <div class="photo cover">
+    <ion-img [src]="photoSelected.img"></ion-img>
+  </div>
+  <ion-grid>
+    <ion-row wrap>
+      <ion-col width-25 *ngFor="let photo of photos" (click)="changePhoto( photo )">
+        <ion-img [src]="photo.img" class="photo"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

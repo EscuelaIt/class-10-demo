@@ -1,0 +1,22 @@
+<ion-content padding class="login">
+  <form (ngSubmit)="doLogin()">
+    <ion-img src="img/logo-white.png"></ion-img>
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input placeholder="Correo" type="email" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Contraseña" type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button light outline block type="submit">
+      Ingresar
+    </button>
+  </form>
+</ion-content>
+
+<ion-footer class="footer">
+  <ion-navbar>
+    <ion-title (click)="goToRegisterPage()">Register</ion-title>
+  </ion-navbar>
+</ion-footer>

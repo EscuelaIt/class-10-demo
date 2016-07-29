@@ -1,0 +1,17 @@
+.register {
+  background-color: #4368b6;
+  .item{
+    background-color: rgba(255,255,255,.3);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+    .text-input{
+      color: white;
+    }
+  }
+  ::-webkit-input-placeholder{
+    color: white;
+  }
+}

@@ -1,0 +1,46 @@
+.filters {
+  .photo{
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    &.cover{
+      height: 300px;
+    }
+  }
+  .scroll{
+    height: 130px;
+  }
+  ion-img{
+    &.grayscale{
+      img{
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+      }
+    }
+    &.sepia{
+      img{
+        -webkit-filter: sepia(1);
+        filter: sepia(1);
+      }
+    }
+    &.sature{
+      img{
+        -webkit-filter: saturate(8);
+        filter: saturate(8);
+      }
+    }
+    &.hue-rotate{
+      img{
+        -webkit-filter: hue-rotate(90deg);
+        filter: hue-rotate(90deg);
+      }
+    }
+    &.none{
+      img{
+        -webkit-filter: none;
+        filter: none;
+      }
+    }
+  }
+}

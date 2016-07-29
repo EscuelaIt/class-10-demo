@@ -1,0 +1,14 @@
+.camera {
+  .photo{
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    &.cover{
+      height: 300px;
+    }
+  }
+  ion-col{
+    padding: 2px;
+  }
+}
